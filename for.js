@@ -18,17 +18,27 @@
 //   console.log(`${sayac}. sayiniz : ${rasgeleSayi}`);
 // }
 
-let i = 1;
-while (i <= 10) {
-  console.log(i);
-  i++;
-}
-console.log("bye");
+// let i = 1;
+// while (i <= 10) {
+//   console.log(i);
+//   i++;
+// }
+// console.log("bye");
 
-let not = prompt("lütfen 0-100 arasıda bir not giriniz");
+// let not = prompt("lütfen 0-100 arasıda bir not giriniz");
 
-while (not < 0 || not > 100) {
-  console.log("not 0 dan küçük veya 100 den büyük olamaz");
+// while (not < 0 || not > 100) {
+//   console.log("not 0 dan küçük veya 100 den büyük olamaz");
+//   not = prompt("lütfen 0-100 arasıda bir not giriniz");
+// }
+// console.log("notunuz:", not);
+
+let not;
+do {
   not = prompt("lütfen 0-100 arasıda bir not giriniz");
-}
-console.log("notunuz:", not);
+  if (not < 0 || not > 100) {
+    alert("lütfen 0-100 arasıda bir not giriniz");
+  }
+} while (not < 0 || not > 100);
+console.log("not", not);
+
